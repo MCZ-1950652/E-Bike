@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-BIKE Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header p {
+            margin-top: 12px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .products {
+            width: 1100px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 320px;
+            background-color: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin: 18px 16px 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #666;
+            margin: 0 16px 10px;
+            line-height: 1.6;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #e91e63;
+            margin: 12px 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-left: 16px;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #ff4f87;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            width: 1100px;
+            margin: 20px auto 60px;
+            text-align: center;
+        }
+
+        .contact-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #contact-info {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        #contact-info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>E-Bike Store</h1>
+        <p>Welcome to our product collection</p>
+    </div>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://img0.baidu.com/it/u=708628436,2717351713&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=755/320x220" alt="Product 1">
+            <h2>Product One</h2>
+            <p>Elegant design, premium quality, perfect for everyday use.</p>
+            <div class="price">$29.99</div>
+            <a href="https://example.com" target="_blank" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://t13.baidu.com/it/u=3402682655,3199272660&fm=224&app=112&f=JPEG?w=500&h=500/320x220" alt="Product 2">
+            <h2>Product Two</h2>
+            <p>Modern style with practical features and a clean look.</p>
+            <div class="price">$35.99</div>
+            <a href="https://example.com" target="_blank" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://t15.baidu.com/it/u=1387670432,1727791208&fm=224&app=112&f=JPEG?w=500&h=500/320x220" alt="Product 3">
+            <h2>Product Three</h2>
+            <p>Simple, stylish, and suitable for gifts or personal use.</p>
+            <div class="price">$42.99</div>
+            <a href="https://example.com" target="_blank" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://img2.baidu.com/it/u=3248006917,1379774321&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500/320x220" alt="Product 4">
+            <h2>Product Four</h2>
+            <p>Comfortable, beautiful, and designed to stand out.</p>
+            <div class="price">$31.99</div>
+            <a href="https://example.com" target="_blank" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <button class="contact-button" onclick="toggleContact()">Contact Us</button>
+
+        <div id="contact-info">
+            <p><strong>Phone:</strong> 0487 043 460</p>
+            <p><strong>Email:</strong> hello@example.com</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContact() {
+            let box = document.getElementById("contact-info");
+
+            if (box.style.display === "none" || box.style.display === "") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
